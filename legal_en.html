@@ -129,6 +129,10 @@
   <h3>4. AI &amp; Speech Processors</h3>
   <p>AI tutor requests are relayed through our server to an AI model provider. Speech synthesis text and pronunciation recordings are sent to Microsoft Azure Speech in Japan East; our server supplies temporary speech authorization. We send only the text/audio needed plus an anonymous device identifier for quota control. These interactions are not used for advertising profiles.</p>
 
+  <h3>Network Relay and Performance Diagnostics</h3>
+  <p>When the edge service is reachable, AI questions, temporary speech authorization requests and abuse reports pass through Cloudflare to our Tencent Cloud backend. If the edge cannot be reached, the app may select a direct connection to Tencent Cloud before submitting a service request. Cloudflare processes the content and network information necessary for requests relayed through it. Recordings and speech synthesis text continue to go directly to Microsoft Azure.</p>
+  <p>To diagnose latency and failures, we store fixed endpoint categories, status codes, elapsed times, failure categories and app versions in Cloudflare Analytics Engine. These diagnostic records contain no question or answer text, audio, device identifiers, IP addresses or full URLs, are not linked to your identity, and are not used for advertising or cross-app tracking. Network providers still process information needed to establish connections. Under Cloudflare's current retention policy these metrics are stored for three months; failed metric uploads are not queued on your device. Direct requests selected because the edge is unavailable do not report metrics to that edge, so these statistics do not cover every request.</p>
+
   <h3>5. What We Do Not Do</h3>
   <ul>
     <li>No sign-up; no name, email, phone, contacts, or photos requested.</li>

@@ -131,6 +131,10 @@
       <a href="https://www.microsoft.com/zh-cn/trust-center/privacy">Azure 数据保护说明</a>。</li>
   </ul>
 
+  <h3>网络代理与性能诊断</h3>
+  <p>代理可达时，AI 提问、临时语音授权和举报请求经 Cloudflare 转发至我们的腾讯云服务；代理不可达时，App 可在提交业务请求之前选择直连腾讯云服务。Cloudflare 会处理经其转发的业务请求所需的内容与网络信息。录音和语音合成文本仍直接发往 Microsoft Azure，不经过这条代理。</p>
+  <p>为诊断请求速度和故障，我们在 Cloudflare Analytics Engine 保存固定接口类别、状态码、耗时、失败类别和 App 版本；这些统计不含提问正文、答案、录音、设备标识、IP 地址或完整 URL，不关联身份，不用于广告或跨 App 追踪。网络服务商仍会处理网络连接所需的信息。统计按 Cloudflare 当前策略保留三个月，未成功上传的统计不在设备上排队保存；代理不可达而直连的请求不向该代理上报统计，因此统计不覆盖所有请求。</p>
+
   <h3>五、内购</h3>
   <ul>
     <li>内购通过 Apple StoreKit / App Store 完成，支付与账单信息由 Apple 处理，开发者不接触你的银行卡号或支付凭证。Apple 的隐私做法见

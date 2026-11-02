@@ -28,7 +28,7 @@
 <div class="wrap">
 
   <h1>Japanese Kana &amp; Words — Legal</h1>
-  <p class="muted">Effective Date: October 30, 2026 · Provider: Ye Wei</p>
+  <p class="muted">Effective Date: November 1, 2026 · Provider: Ye Wei</p>
   <nav class="toc">
     <a href="#terms">Terms of Use</a>
     <a href="#privacy">Privacy Policy</a>
@@ -113,21 +113,24 @@
     <tr><th>Data</th><th>Why</th><th>Where</th></tr>
     <tr><td>Learning progress, settings, wordbook, streaks</td><td>Lessons &amp; spaced repetition</td><td>On your device only</td></tr>
     <tr><td>Anonymous device identifier</td><td>Daily free/Pro quota</td><td>Our server in mainland China (temporary, rate limiting)</td></tr>
-    <tr><td>Text sent to the AI tutor</td><td>Answer your question</td><td>Our server → AI model provider</td></tr>
+    <tr><td>Text sent to the AI tutor</td><td>Answer your question</td><td>Our Tencent Cloud server → DeepSeek (via Cloudflare when reachable)</td></tr>
     <tr><td>Text prepared for cloud speech, including custom words or sentences</td><td>Generate natural pronunciation and cache it for playback</td><td>Microsoft Azure Speech (Japan East)</td></tr>
     <tr><td>Voice recordings (pronunciation practice)</td><td>Score your reading</td><td>Microsoft Azure Speech</td></tr>
     <tr><td>Purchase status / receipt</td><td>Unlock &amp; restore Pro</td><td>Apple StoreKit (we don't see payment details)</td></tr>
     <tr><td>AI abuse reports</td><td>Review inappropriate content</td><td>Our server logs</td></tr>
   </table>
 
+  <h3>Online-Service Choices</h3>
+  <p>Before first sending questions or recent conversation to online AI, the App asks for your explicit permission and names the providers involved. Cloud speech has a separate permission prompt before new text synthesis or pronunciation recording and scoring. Declining keeps the offline dictionary, lessons, bundled audio and cached audio available. In Profile, choose “Reset online-service permissions” to be asked again before future use. Resetting permissions does not erase data already processed; contact us for server-data requests. Permission choices are stored locally and are not restored from imported learning backups.</p>
+
   <h3>2. On-Device Data</h3>
-  <p>Your wordbook, progress and settings are stored locally. To prepare natural pronunciation for content without bundled or cached audio, the app sends the text to Microsoft Azure Speech, including in the background after saving a custom entry or when showing relevant content. The generated audio is cached on your device. Bundled and cached audio can play offline. Deleting the App removes its local data; exported backup files remain wherever you saved them.</p>
+  <p>Your wordbook, progress and settings are stored locally. To prepare natural pronunciation for content without bundled or cached audio, after you allow cloud speech, the app sends the text to Microsoft Azure Speech, including in the background after saving a custom entry or when showing relevant content. The generated audio is cached on your device. Bundled and cached audio can play offline. Deleting the App removes its local data; exported backup files remain wherever you saved them.</p>
 
   <h3>3. Payments</h3>
   <p>Purchases are completed by Apple; we do not collect or store your card number. Apple provides purchase status so we can unlock features. For refunds: <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
 
   <h3>4. AI &amp; Speech Processors</h3>
-  <p>AI tutor requests are relayed through our server to an AI model provider. Speech synthesis text and pronunciation recordings are sent to Microsoft Azure Speech in Japan East; our server supplies temporary speech authorization. We send only the text/audio needed plus an anonymous device identifier for quota control. These interactions are not used for advertising profiles.</p>
+  <p>AI tutor questions and recent conversation are relayed through our Tencent Cloud server to DeepSeek. Speech synthesis text and pronunciation recordings are sent to Microsoft Azure Speech in Japan East; our server supplies temporary speech authorization. We send only the text/audio needed plus an anonymous device identifier for quota control. These interactions are not used for advertising profiles.</p>
 
   <h3>Network Relay and Performance Diagnostics</h3>
   <p>When the edge service is reachable, AI questions, temporary speech authorization requests and abuse reports pass through Cloudflare to our Tencent Cloud backend. If the edge cannot be reached, the app may select a direct connection to Tencent Cloud before submitting a service request. Cloudflare processes the content and network information necessary for requests relayed through it. Recordings and speech synthesis text continue to go directly to Microsoft Azure.</p>
@@ -150,7 +153,7 @@
   <p>The App is intended for adult learners and is not directed to children under 13. We do not knowingly collect personal information from children.</p>
 
   <h3>9. Security &amp; International Processing</h3>
-  <p>We use HTTPS/TLS, keep service keys server-side (not in the App), and minimize server data. Our own backend — used only for AI tutor requests, the pronunciation relay, and daily free/Pro quota — runs on servers located in <b>mainland China</b> (Tencent Cloud, Shanghai region). If you use those features from outside mainland China, the minimum text/audio and the anonymous device identifier described above are transferred to and processed there. Where the law requires a transfer mechanism, we rely on standard contractual clauses or on your decision to use the feature. Limited data for AI/speech may also be processed by providers in other countries under appropriate safeguards.</p>
+  <p>We use HTTPS/TLS. Azure provider credentials are held by our server, which supplies temporary authorization to the App. Our Tencent Cloud backend in <b>Shanghai, mainland China</b> handles AI questions, recent conversation, reports, temporary speech authorization and quota identifiers. Reachable requests may pass through Cloudflare before reaching that backend. Speech synthesis text and pronunciation recordings go directly to Microsoft Azure Speech in Japan East; they are not routed through our Tencent Cloud backend. DeepSeek processes AI conversation content. Using these online features can involve processing outside your country. Contact us for information about the providers and safeguards applicable to your request.</p>
 
   <h3>10. Changes &amp; Contact</h3>
   <p>We may update this policy; the Effective Date above reflects the latest version. Contact: <b>Ye Wei</b>, <b>2603462296@qq.com</b>.</p>

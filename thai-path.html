@@ -3,36 +3,108 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Thai Path Support</title>
+  <title>Thai Path — Privacy, Terms, Purchases and Support</title>
   <style>
-    body { max-width: 720px; margin: 3rem auto; padding: 0 1.25rem; font: 1rem/1.65 system-ui; color: #183e35; }
-    section { margin: 2rem 0; }
+    body { max-width: 46rem; margin: 2rem auto; padding: 0 1.25rem; font: 1rem/1.65 system-ui; color: #183e35; }
     a { color: #16604b; }
+    nav { display: flex; flex-wrap: wrap; gap: .35rem 1rem; margin-bottom: 1.5rem; }
+    section { padding-top: 1rem; margin: 2rem 0; border-top: 1px solid #bdd0c9; }
+    h1, h2, h3 { line-height: 1.25; }
+    h3 { margin-top: 1.6rem; }
+    [id] { scroll-margin-top: 1rem; }
+    h3:target { border-inline-start: .25rem solid #16604b; padding-inline-start: .6rem; }
   </style>
 </head>
 <body>
-  <h1 id="support">Thai Path Support</h1>
-  <section lang="en">
+<main>
+  <h1 id="support">Thai Path</h1>
+  <p id="privacy">Privacy, terms, purchases and support</p>
+  <nav aria-label="Languages">
+    <a href="#en" lang="en">English</a>
+    <a href="#zh-hant" lang="zh-Hant">繁體中文</a>
+    <a href="#ja" lang="ja">日本語</a>
+    <a href="#ko" lang="ko">한국어</a>
+  </nav>
+
+  <section lang="en" id="en">
     <h2>English</h2>
-    <p>For help with Thai Path, contact <a href="mailto:2603462296@qq.com">2603462296@qq.com</a>. Include your App and iOS versions and the steps that reproduce the issue.</p>
-    <p>To recover a purchase, open Profile, select the full edition, and tap Restore Purchases using the Apple Account that made the purchase.</p>
+    <p>Last updated November 10, 2026</p>
+    <nav aria-label="Sections">
+      <a href="#en-privacy">Privacy</a><a href="#en-terms">Terms</a>
+      <a href="#en-purchases">Purchases and refunds</a><a href="#en-support">Support</a>
+    </nav>
+    <h3 id="en-privacy">Privacy policy</h3>
+    <p>Thai Path does not require an app account and has no advertising, analytics or tracking. The developer does not collect personal data through the app. Progress, settings and custom cards are stored on your device. You can reset learning progress and export or import a backup. You choose where to save or share any exported file.</p>
+    <p>Speaking practice uses the microphone only when you start recording after granting permission. Recordings stay on your device and are deleted when you leave the practice screen. Study reminders are optional local notifications. You can change permissions in iOS Settings. Bundled Thai audio plays offline. If you use an iOS system voice, Apple may need to download it.</p>
+    <p>Apple handles App Store downloads and payments. The app checks verified StoreKit transactions to unlock the full edition and does not receive your payment details. Apple services are subject to the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>. If you email support, the developer uses the email address and information you choose to provide to respond.</p>
+    <h3 id="en-terms">Terms of use</h3>
+    <p>The <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple Standard Licensed Application End User License Agreement</a> applies to the app. Thai Path provides Thai-language learning materials. See Profile → Privacy &amp; content for credits and licenses for third-party vocabulary. These app-specific notices supplement the Apple license and preserve your rights under applicable consumer law.</p>
+    <h3 id="en-purchases">Purchases and refunds</h3>
+    <p>Thai Path is free to download and includes foundational lessons and sample cards. The full edition unlocks the complete word and sentence libraries through a one-time, non-consumable App Store purchase. There is no subscription or automatic renewal. The app shows the price for your App Store before you confirm. If Apple requires purchase approval, access unlocks after the transaction is approved and verified.</p>
+    <p>To restore access, use the Apple Account that made the purchase and open Profile → Full edition → Restore purchases. Restoring access does not import learning progress. To request a refund, follow <a href="https://support.apple.com/118223">Apple’s refund instructions</a> or visit <a href="https://reportaproblem.apple.com/">Report a Problem</a>. Apple processes refund requests. If the purchase is refunded, full-edition access may be revoked and saved progress remains. Your statutory consumer rights apply.</p>
+    <h3 id="en-support">Support</h3>
+    <p>Email <a href="mailto:2603462296@qq.com">2603462296@qq.com</a> for app help, privacy inquiries or purchase restoration issues. For a technical issue, include the app and iOS versions and the steps to reproduce it.</p>
   </section>
-  <section lang="zh-Hant">
+
+  <section lang="zh-Hant" id="zh-hant">
     <h2>繁體中文</h2>
-    <p>如需泰語小徑的使用協助，請寄信至 <a href="mailto:2603462296@qq.com">2603462296@qq.com</a>，並附上 App 版本、iOS 版本與遇到問題的操作步驟。</p>
-    <p>若要恢復買斷，請使用購買時的 Apple 帳號，前往「我的」開啟完整版並點選「恢復購買」。</p>
+    <p>最後更新於 2026 年 11 月 10 日</p>
+    <nav aria-label="各項說明">
+      <a href="#zh-hant-privacy">隱私權政策</a><a href="#zh-hant-terms">使用條款</a>
+      <a href="#zh-hant-purchases">購買與退款</a><a href="#zh-hant-support">技術支援</a>
+    </nav>
+    <h3 id="zh-hant-privacy">隱私權政策</h3>
+    <p>泰語小徑不需要註冊 App 帳號，且沒有廣告、使用分析或追蹤。開發者不透過 App 蒐集個人資料。學習進度、設定及自訂卡片都儲存在裝置上。你可以重設學習進度，也可以匯出或匯入備份。匯出的檔案由你選擇儲存或分享的位置。</p>
+    <p>在口說練習中，只有你授權並開始錄音時才會使用麥克風。錄音留在裝置上，離開練習畫面時會刪除。學習提醒為選用的本機通知。你可以在 iOS「設定」中變更權限。內建泰語音檔可離線播放，使用 iOS 系統語音時，Apple 可能需要先下載語音。</p>
+    <p>App Store 的下載與付款由 Apple 處理。App 透過 StoreKit 檢查已驗證的交易以解鎖完整版，不會收到你的付款明細。Apple 服務適用<a href="https://www.apple.com/legal/privacy/">《Apple 隱私權政策》</a>。若你寄信聯絡支援，開發者會使用你的電子郵件地址與你主動提供的資訊回覆。</p>
+    <h3 id="zh-hant-terms">使用條款</h3>
+    <p>本 App 適用 <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple 標準授權應用程式最終使用者授權合約</a>。泰語小徑提供泰語學習資料。第三方詞彙資料的來源與授權資訊列在「我的 → 隱私與內容來源」。本頁說明補充 Apple 授權條款，並保留你依適用消費者保護法享有的權利。</p>
+    <h3 id="zh-hant-purchases">購買與退款說明</h3>
+    <p>泰語小徑可免費下載，包含基礎課程及試學卡片。你可以透過 App Store 一次買斷完整版，解鎖完整詞句庫。這是非消耗型 App 內購買，沒有訂閱或自動續費。確認前會顯示你所在 App Store 的價格。如果 Apple 要求核准購買，交易核准並驗證後即會解鎖。</p>
+    <p>要恢復完整版，請使用購買時的 Apple 帳號，前往「我的 → 完整版 → 恢復購買」。恢復購買不會匯入學習進度。若要申請退款，請參考 <a href="https://support.apple.com/zh-tw/118223">Apple 的退款指引</a>，或前往<a href="https://reportaproblem.apple.com/">回報問題</a>。Apple 負責處理退款申請。退款後可能會收回完整版權限，已儲存的學習進度會保留。你的法定消費者權利仍適用。</p>
+    <h3 id="zh-hant-support">技術支援</h3>
+    <p>若需使用協助、想詢問隱私問題，或無法恢復購買，請寄信至 <a href="mailto:2603462296@qq.com">2603462296@qq.com</a>。回報技術問題時，請附上 App 版本、iOS 版本與重現問題的操作步驟。</p>
   </section>
-  <section lang="ja">
+
+  <section lang="ja" id="ja">
     <h2>日本語</h2>
-    <p>アプリのサポートは <a href="mailto:2603462296@qq.com">2603462296@qq.com</a> までご連絡ください。アプリとiOSのバージョン、問題が起きる手順をお知らせください。</p>
-    <p>購入を復元するには、購入時のApple Accountで「マイページ」から完全版を開き、「購入を復元」を選んでください。</p>
+    <p>最終更新日 2026年11月10日</p>
+    <nav aria-label="項目">
+      <a href="#ja-privacy">プライバシー</a><a href="#ja-terms">利用規約</a>
+      <a href="#ja-purchases">購入と返金</a><a href="#ja-support">サポート</a>
+    </nav>
+    <h3 id="ja-privacy">プライバシーポリシー</h3>
+    <p>「タイ語の小道」ではアプリのアカウント登録は不要です。広告、利用状況の分析、トラッキングは行いません。開発者はアプリを通じて個人情報を収集しません。学習の進捗、設定、自作カードは端末内に保存されます。学習の進捗はリセットでき、バックアップの書き出しと読み込みができます。書き出したファイルの保存先や共有先はご自身で選択します。</p>
+    <p>発音練習のマイクは、許可したうえで録音を開始した場合にのみ使用します。録音は端末内に保存され、練習画面を離れると削除されます。学習リマインダーは任意のローカル通知です。権限はiOSの「設定」で変更できます。内蔵のタイ語音声はオフラインで再生できます。iOSのシステム音声を利用する場合は、Appleから音声のダウンロードが必要になることがあります。</p>
+    <p>App Storeでのダウンロードと支払いはAppleが処理します。アプリはStoreKitで検証済みの取引を確認して完全版を利用可能にし、支払い情報は受け取りません。Appleのサービスには<a href="https://www.apple.com/legal/privacy/">Appleのプライバシーポリシー</a>が適用されます。サポートへメールでお問い合わせいただいた場合、開発者はメールアドレスと提供された情報を回答に利用します。</p>
+    <h3 id="ja-terms">利用規約</h3>
+    <p>本アプリには<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Appleの標準エンドユーザー使用許諾契約</a>が適用されます。「タイ語の小道」はタイ語の学習教材を提供します。第三者の語彙資料の出典とライセンスは「マイページ → プライバシーと出典」で確認できます。本ページはAppleの使用許諾を補足するもので、適用される消費者保護法に基づく権利は維持されます。</p>
+    <h3 id="ja-purchases">購入と返金について</h3>
+    <p>アプリは無料でダウンロードでき、基礎レッスンと一部のカードを利用できます。完全版はApp Storeで一度購入すると、すべての単語と文を利用できる非消耗型のアプリ内課金です。サブスクリプションや自動更新はありません。確定前にご利用のApp Storeの価格が表示されます。Appleの承認が必要な場合は、承認と取引の確認後に利用できます。</p>
+    <p>復元するには、購入時のApple Accountで「マイページ → 完全版 → 購入を復元」を選んでください。購入を復元しても学習の進捗は読み込まれません。返金は<a href="https://support.apple.com/ja-jp/118223">Appleの返金手順</a>または<a href="https://reportaproblem.apple.com/">問題を報告するページ</a>から申請できます。返金申請はAppleが処理します。返金後、完全版を利用できなくなる場合がありますが、保存済みの学習の進捗は残ります。法令上の消費者の権利は維持されます。</p>
+    <h3 id="ja-support">サポート</h3>
+    <p>操作方法、プライバシー、購入の復元については <a href="mailto:2603462296@qq.com">2603462296@qq.com</a> へご連絡ください。不具合の場合は、アプリとiOSのバージョン、再現手順もお知らせください。</p>
   </section>
-  <section lang="ko">
+
+  <section lang="ko" id="ko">
     <h2>한국어</h2>
-    <p>앱에 대한 문의는 <a href="mailto:2603462296@qq.com">2603462296@qq.com</a>으로 보내 주세요. 앱과 iOS 버전, 문제가 발생하는 단계를 적어 주세요.</p>
-    <p>구매를 복원하려면 구매에 사용한 Apple 계정으로 ‘내 정보’에서 전체 버전을 열고 ‘구매 복원’을 누르세요.</p>
+    <p>최종 업데이트 2026년 11월 10일</p>
+    <nav aria-label="안내 항목">
+      <a href="#ko-privacy">개인정보 처리방침</a><a href="#ko-terms">이용 약관</a>
+      <a href="#ko-purchases">구매 및 환불</a><a href="#ko-support">지원</a>
+    </nav>
+    <h3 id="ko-privacy">개인정보 처리방침</h3>
+    <p>태국어 산책은 별도의 앱 계정이 필요 없으며 광고, 이용 분석, 추적 기능이 없습니다. 개발자는 앱을 통해 개인정보를 수집하지 않습니다. 학습 진도, 설정, 직접 만든 카드는 기기에 저장됩니다. 학습 진도를 초기화하거나 백업을 내보내고 가져올 수 있습니다. 내보낸 파일을 저장하거나 공유할 위치는 사용자가 선택합니다.</p>
+    <p>말하기 연습에서는 권한을 허용하고 녹음을 시작할 때만 마이크를 사용합니다. 녹음 파일은 기기에만 저장되며 연습 화면을 나가면 삭제됩니다. 학습 알림은 선택 사항이며 기기에서 예약됩니다. 권한은 iOS 설정에서 바꿀 수 있습니다. 앱에 포함된 태국어 음성은 오프라인에서 재생됩니다. iOS 시스템 음성을 사용하려면 Apple에서 음성을 다운로드해야 할 수 있습니다.</p>
+    <p>App Store의 다운로드와 결제는 Apple이 처리합니다. 앱은 StoreKit에서 검증된 거래를 확인해 전체 버전을 열며 결제 정보는 받지 않습니다. Apple 서비스에는 <a href="https://www.apple.com/legal/privacy/">Apple 개인정보 처리방침</a>이 적용됩니다. 이메일로 문의하면 개발자는 답변을 위해 이메일 주소와 사용자가 제공한 정보를 이용합니다.</p>
+    <h3 id="ko-terms">이용 약관</h3>
+    <p>이 앱에는 <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple의 표준 앱 최종 사용자 사용권 계약</a>이 적용됩니다. 태국어 산책은 태국어 학습 자료를 제공합니다. 제3자 어휘 자료의 출처와 라이선스는 ‘내 정보 → 개인정보 및 콘텐츠’에서 확인할 수 있습니다. 이 안내는 Apple 사용권 계약을 보완하며, 관련 소비자 보호 법령에 따른 권리는 유지됩니다.</p>
+    <h3 id="ko-purchases">구매 및 환불 안내</h3>
+    <p>앱은 무료로 다운로드할 수 있으며 기초 수업과 일부 카드를 제공합니다. 전체 버전은 App Store에서 한 번 구매하면 모든 단어와 문장을 이용할 수 있는 비소모성 앱 내 구입입니다. 구독이나 자동 갱신은 없습니다. 구매를 확정하기 전에 이용 중인 App Store의 가격이 표시됩니다. Apple의 구매 승인이 필요한 경우 거래가 승인되고 검증된 후 전체 버전이 열립니다.</p>
+    <p>구매를 복원하려면 구매에 사용한 Apple 계정으로 ‘내 정보 → 전체 버전 → 구매 복원’을 선택하세요. 구매 복원으로 학습 진도를 가져올 수는 없습니다. 환불을 요청하려면 <a href="https://support.apple.com/ko-kr/118223">Apple의 환불 안내</a>를 따르거나 <a href="https://reportaproblem.apple.com/">문제 신고</a> 페이지를 이용하세요. 환불 요청은 Apple이 처리합니다. 환불 후 전체 버전 이용 권한이 해제될 수 있지만 저장된 학습 진도는 유지됩니다. 법률에 따른 소비자의 권리는 유지됩니다.</p>
+    <h3 id="ko-support">고객 지원</h3>
+    <p>앱 사용, 개인정보 또는 구매 복원에 관한 문의는 <a href="mailto:2603462296@qq.com">2603462296@qq.com</a>으로 보내 주세요. 오류를 문의할 때는 앱과 iOS 버전, 오류가 발생하는 단계를 알려 주세요.</p>
   </section>
-  <p><a href="#privacy">Privacy policy · 隱私政策 · プライバシー · 개인정보 처리방침</a></p>
-<section id="privacy"><h2>Thai Path Privacy Policy</h2><p>Effective November 10, 2026.</p><article lang="zh-Hant"><h2>繁體中文</h2><p>泰語小徑的學習進度、收藏及自訂詞條儲存在你的裝置上。本版本沒有帳號、廣告、分析或追蹤 SDK，也不將這些資料傳送給開發者。</p><p>麥克風僅在你選擇錄音並允許權限後使用。練習錄音在裝置上供你播放比較，離開錄音頁時刪除，不包含在學習備份。內建音檔於裝置上播放。使用 Apple 系統朗讀時，部分聲音可能需要先下載。</p><p>通知僅在你允許後啟用，可隨時關閉。你可匯出 JSON 備份、匯入備份或清除學習記錄。匯出檔案可能包含自訂內容，請自行保管；匯入會取代目前學習記錄。</p></article><article lang="en"><h2>English</h2><p>Thai Path stores progress, bookmarks and custom entries on your device. This version has no account, advertising, analytics or tracking SDK and does not send this data to the developer.</p><p>The microphone is used only when you choose to record and grant permission. Practice recordings stay on your device, are removed when leaving the recording screen, and are not included in learning backups. Bundled audio plays on the device. When using Apple system speech, some voices may need downloading.</p><p>Optional local notifications require permission and can be disabled. You can export a JSON backup, import a backup or reset progress. Exported files may contain your own content; keep them securely. Import replaces existing learning records.</p></article><article lang="ja"><h2>日本語</h2><p>学習記録・保存項目・自作単語は端末内に保存されます。アカウント、広告、分析・追跡SDKはなく、開発者にこれらのデータを送信しません。</p><p>マイクは録音を選び、許可した場合のみ使用します。録音は端末内で再生でき、録音画面を閉じると削除され、バックアップには含まれません。内蔵音声は端末で再生します。Appleのシステム音声を使用する場合、音声のダウンロードが必要なことがあります。</p><p>任意の通知は許可後に有効となり、停止できます。JSONバックアップの書き出し・読み込みや記録の削除が可能です。書き出したファイルは安全に管理してください。読み込みは現在の記録を置き換えます。</p></article><article lang="ko"><h2>한국어</h2><p>학습 진도, 책갈피와 사용자 단어는 기기에 저장됩니다. 계정, 광고, 분석 또는 추적 SDK가 없으며 이 데이터를 개발자에게 전송하지 않습니다.</p><p>녹음을 선택하고 권한을 허용한 경우에만 마이크를 사용합니다. 녹음은 기기에 저장되어 비교 재생할 수 있으며 녹음 화면을 나가면 삭제됩니다. 학습 백업에는 포함되지 않습니다. 앱에 포함된 음성은 기기에서 재생됩니다. Apple 시스템 음성을 사용할 경우 음성을 다운로드해야 할 수 있습니다.</p><p>선택 알림은 허용 후 활성화되며 끌 수 있습니다. JSON 백업 내보내기, 가져오기와 학습 기록 삭제가 가능합니다. 내보낸 파일을 안전하게 보관하세요. 가져오면 기존 학습 기록이 대체됩니다.</p></article></section>
+</main>
 </body>
 </html>
